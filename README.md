@@ -1,4 +1,4 @@
-RHUAN CPM:
+KILLER CPM:
 
 ADQUIRA O ACESSO ILIMITADO NO PV 
 
@@ -24,11 +24,11 @@ pkg install python
 
 5⁰
 
-git clone https://github.com/KILLERxxtrem/KLR
+git clone https://github.com/KILLERxxtrem/KILLCPM
 
 6⁰
 
-cd RH-BOT
+cd KILLCPM
 
 7⁰
 
