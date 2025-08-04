@@ -45,7 +45,7 @@ def banner(console):
         "red(0,255,0)", "red(0,255,255)", "red(0,191,255)", "red(0,0,e255)", "red(139,0,255)",
         "rgb(255,0,255)"
     ]
-    colorful_text = gradient_text(brand_name, color)
+    colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text)
     print(Colorate.Horizontal(Colors.red, '=================================================================='))
     print(Colorate.Horizontal(Colors.red, '\t         𝐅𝐀𝐂𝐀 𝐋𝐎𝐆𝐎𝐔𝐓 e𝐃𝐎 𝐂𝐏𝐌 𝐀𝐍𝐓𝐄𝐒 𝐃𝐄 𝐔𝐒𝐀𝐑 𝐄𝐒𝐓𝐀 𝐅𝐄𝐑𝐑𝐀𝐌𝐄𝐍𝐓𝐀'))
