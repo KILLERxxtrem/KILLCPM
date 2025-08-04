@@ -30,7 +30,7 @@ def gradient_text(text, colors):
             if char != ' ':
                 color_index = int(((x / (width - 1 if width > 1 else 1)) + (y / (height - 1 if height > 1 else 1))) * 0.5 * (len(colors) - 1))
                 color_index = min(max(color_index, 0), len(colors) - 1)  # Ensure the index is within bounds
-                style = Style(color=color[color_index])
+                style = Style(color=colors[color_index])
                 colorful_text.append(char, style=style)
             else:
                 colorful_text.append(char)
@@ -45,7 +45,7 @@ def banner(console):
         "red(0,255,0)", "red(0,255,255)", "red(0,191,255)", "red(0,0,e255)", "red(139,0,255)",
         "rgb(255,0,255)"
     ]
-    colorful_text = gradient_text(brand_name, colors)
+    colorful_text = gradient_text(brand_red, colors)
     console.print(colorful_text)
     print(Colorate.Horizontal(Colors.red, '=================================================================='))
     print(Colorate.Horizontal(Colors.red, '\t         𝐅𝐀𝐂𝐀 𝐋𝐎𝐆𝐎𝐔𝐓 e𝐃𝐎 𝐂𝐏𝐌 𝐀𝐍𝐓𝐄𝐒 𝐃𝐄 𝐔𝐒𝐀𝐑 𝐄𝐒𝐓𝐀 𝐅𝐄𝐑𝐑𝐀𝐌𝐄𝐍𝐓𝐀'))
@@ -129,7 +129,7 @@ if __name__ == "__main__":
     console = Console()
     signal.signal(signal.SIGINT, signal_handler)
     while True:
-        banner(console)
+        banner (console)
         acc_email = prompt_valid_value("[bold][?] INSIRA SEU EMAIL[/bold]", "Email", password=False)
         acc_password = prompt_valid_value("[bold][?] INSIRA SUA SENHA[/bold]", "Password", password=False)
         acc_access_key = prompt_valid_value("[bold][?] INSIRA SUA CHAVE DE ACESSO[/bold]", "Access Key", password=False)
